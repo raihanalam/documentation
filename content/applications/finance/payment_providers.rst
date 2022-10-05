@@ -318,6 +318,17 @@ Countries
 Restrict the use of the payment provider to a selection of countries. Leave this field blank to make
 the payment provider available in all countries.
 
+Currencies
+**********
+
+All payment providers have a different list of supported currencies. These lists are preconfigured
+and available in the Configuration tab. It serves as a first filter for payment operations. There
+might be unknowns, errors or updates in these lists, hence the possibility for the user to edit it
+by adding or removing currencies. Empty lists either mean these are too broad to be shown (for
+example Authorize or AsiaPay), or we lack information about these. In the case of an empty list, the
+payment provider will appear as available, even though the payment will be refused in a later stage
+if the currency is not suported.
+
 .. _payment_providers/journal:
 
 Maximum Amount
