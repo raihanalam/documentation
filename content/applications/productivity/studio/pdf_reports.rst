@@ -3,7 +3,7 @@ PDF reports
 ===========
 
 Odoo uses HTML and CSS technologies to create reports (PDF documents). HTML elements provide the
-basic structure while CSS interacts with the elements to establish how they are shown to the user.
+basic structure, while CSS interacts with the elements to establish how they are shown to the user.
 Odoo also uses Bootstrap, a CSS framework, for the grid layout.
 
 .. _studio/pdf-reports/default-layout:
@@ -12,10 +12,8 @@ Default layout
 ==============
 
 The default layout of reports is managed outside Studio. Go to :menuselection:`Settings -->
-Companies: Document Layout --> Configure Document Layout`. Layout settings apply to all reports, but
-only of the current company.
-
-.. print button seems to let you configure all your documents as well and then download it once configured?
+Companies: Document Layout --> Configure Document Layout`. Layout settings apply to all reports but
+only to the current company.
 
 .. tip::
    Use :guilabel:`Download PDF Preview` to view how the different settings affect the layout of a
@@ -74,7 +72,7 @@ Seven fonts are available. Click on the links below to preview them on Google Fo
 
 .. _studio/pdf-reports/default-layout/logo:
 
-Company Logo
+Company logo
 ------------
 
 Upload an image file to add a :guilabel:`Company Logo`.
@@ -88,23 +86,23 @@ Upload an image file to add a :guilabel:`Company Logo`.
 Colors
 ------
 
-Change the primary and secondary colors which are used throughout reports to highlight important
-elements. The default colors are automatically generated based on the colors of the logo.
+Change the primary and secondary colors used throughout reports to highlight important elements.
+The default colors are automatically generated based on the colors of the logo.
 
 .. _studio/pdf-reports/default-layout/background:
 
-Layout Background
+Layout background
 -----------------
 
 Change the background image of the report:
 
-- :guilabel:`Blank`: no image is used, the background is empty.
-- :guilabel:`Geometric`: an image featuring geometric shapes is added to the background.
+- :guilabel:`Blank`: no image is displayed.
+- :guilabel:`Geometric`: an image featuring geometric shapes is displayed in the background.
 - :guilabel:`Custom`: use a custom background image by uploading one.
 
 .. _studio/pdf-reports/default-layout/tagline:
 
-Company Tagline
+Company tagline
 ---------------
 
 The :guilabel:`Company Tagline` is displayed on the header of :ref:`External reports
@@ -112,7 +110,7 @@ The :guilabel:`Company Tagline` is displayed on the header of :ref:`External rep
 
 .. _studio/pdf-reports/default-layout/details:
 
-Company Details
+Company details
 ---------------
 
 The :guilabel:`Company Details` are displayed on the header of :ref:`External reports
@@ -148,8 +146,8 @@ Use the :guilabel:`Paper format` field to change the paper size of reports. You 
 Header and footer
 =================
 
-When creating a new report in Studio, you first have to choose between one of three styles of
-reports. This is solely used to determine what is displayed on the header and footer.
+When creating a new report in Studio, you must choose between one of three styles of reports first.
+This is solely used to determine what is displayed on the header and footer.
 
 .. _studio/pdf-reports/header-footer/external:
 
@@ -193,11 +191,11 @@ There is neither a header nor a footer.
 
 .. _studio/pdf-reports/elements:
 
-Add elements
-============
+Add tab
+=======
 
 After opening an existing report or creating a new one, go to the :guilabel:`Add` tab to add or edit
-elements. The elements are organized in four categories: :ref:`studio/pdf-reports/elements/block`,
+elements. The elements are organized into four categories: :ref:`studio/pdf-reports/elements/block`,
 :ref:`studio/pdf-reports/elements/inline`, :ref:`studio/pdf-reports/elements/table`, and
 :ref:`studio/pdf-reports/elements/column`.
 
@@ -212,18 +210,18 @@ Block elements start on a new line and occupy the full width of the page.
    You can set an element's width by selecting it and going to the :guilabel:`Options` tab if you do
    not want it to use the full width.
 
-- :guilabel:`Text`: used to add any text using a small font size by default.
+- :guilabel:`Text`: add any text using small font size by default.
 
-- :guilabel:`Title Block`: used to add any text using a larger font size by default.
+- :guilabel:`Title Block`: add any text using larger font size by default.
 
-- :guilabel:`Image`: used to add an image. You can either upload one from your device, add one from
+- :guilabel:`Image`: add an image. You can either upload one from your device, add one from
   an URL, or select one already existing on your database.
 
-- :guilabel:`Field`: used to dynamically add a field's value.
+- :guilabel:`Field`: dynamically add a field's value.
 
-- :guilabel:`Field & Label`: used to dynamically add a field's value and label.
+- :guilabel:`Field & Label`: to dynamically add a field's value and label.
 
-- :guilabel:`Address Block`: used to to dynamically add the values, if any, of a contact's: *Name*,
+- :guilabel:`Address Block`: to dynamically add the values, if any, of a contact's: *Name*,
   *Address*, *Phone*, *Mobile*, and *Email*.
 
   .. image:: pdf_reports/address-block.png
@@ -236,15 +234,15 @@ Inline
 ------
 
 Inline elements are used around other elements. They do not start on a new line and only occupy the
-width they require.
+required width.
 
 .. tip::
    You can set an element's width and margins by selecting it and going to the :guilabel:`Options`
    tab.
 
-- :guilabel:`Text`: used to add any text using a small font size by default.
+- :guilabel:`Text`: add any text using small font size by default.
 
-- :guilabel:`Field`: used to add a field's value.
+- :guilabel:`Field`: dynamically add a field's value.
 
 .. _studio/pdf-reports/elements/table:
 
@@ -253,26 +251,26 @@ Table
 
 Table elements are used together to create a data table.
 
-- :guilabel:`Data table`: used to create the table and dynamically add a first column displaying the
-  *Name* values of a :ref:`Many2Many <studio/fields/relational-fields/many2many>` or :ref:`One2Many
+- :guilabel:`Data table`: create a table and dynamically add a first column displaying the *Name*
+  values of a :ref:`Many2Many <studio/fields/relational-fields/many2many>` or :ref:`One2Many
   <studio/fields/relational-fields/one2many>` field on your model.
 
   .. image:: pdf_reports/data-table.png
      :align: center
      :alt: Example of a Data table
 
-- :guilabel:`Field Column`: used to add a new column to the table displaying the values of a
-  :ref:`Related Field <studio/fields/relational-fields/related-field>` to the one used to create the
+- :guilabel:`Field Column`: add a new column to the table displaying the values of a :ref:`Related
+  Field <studio/fields/relational-fields/related-field>` to the one used to create the
   :guilabel:`Data table`.
 
-- :guilabel:`Text in Cell`: used to add any text within an existing table cell.
+- :guilabel:`Text in Cell`: add any text within an existing table cell.
 
-- :guilabel:`Field in Cell`: used to add, within an existing table cell, the values of a
-  :ref:`Related Field <studio/fields/relational-fields/related-field>` to the one used to create the
+- :guilabel:`Field in Cell`: add, within an existing table cell, the values of a :ref:`Related
+  Field <studio/fields/relational-fields/related-field>` to the one used to create the
   :guilabel:`Data table`.
 
-- :guilabel:`Subtotal & Total`: used to add an existing :guilabel:`Total` field's value. If a
-  :guilabel:`Taxes` field exist, the untaxed and taxes amounts are added before the total amount.
+- :guilabel:`Subtotal & Total`: add an existing :guilabel:`Total` field's value. If a
+  :guilabel:`Taxes` field exists, the untaxed and taxes amounts are added before the total amount.
 
 .. _studio/pdf-reports/elements/column:
 
@@ -282,7 +280,61 @@ Column
 Columns are used to add multiple text :ref:`blocks <studio/pdf-reports/elements/block>` on the same
 line.
 
-- :guilabel:`Two Columns`: used to add any text in two different columns the same line.
+- :guilabel:`Two Columns`: add any text in two different columns.
 
-- :guilabel:`Two Columns`: used to add any text in three different columns the same line.
+- :guilabel:`Three Columns`: add any text in three different columns.
 
+Report tab
+==========
+
+Several configuration options are available under the :guilabel:`Report` tab.
+
+- :guilabel:`Name`: change the report name. The new name is applied everywhere (in Studio, under
+  the :guilabel:`Print` button, and for the PDF file name).
+
+- :guilabel:`Paper format`: change the paper size of the report.
+
+- :guilabel:`Add in print`: add the report under the :guilabel:`🖶 Print` button available on the
+  record.
+
+- :guilabel:`Limit visibility to groups`: limit the availability of the PDF report to specific
+  :doc:`user groups <../../general/users/access_rights>`.
+
+Options tab
+===========
+
+Select an element on the report to access the element's options and edit it.
+
+.. image:: pdf_reports/text-options-tab.png
+   :align: center
+   :alt: The Options tab for a text element
+
+.. note::
+   You can select and edit multiple elements at the same time by clicking on the different sections
+   or divisions (e.g., `div`, `table`, etc.).
+
+Below are presented some of the most common options:
+
+- :guilabel:`Margins`: add space at the :guilabel:`top`, :guilabel:`right`, :guilabel:`bottom`, and
+  :guilabel:`left` of the element.
+
+- :guilabel:`Width`: set the element's maximum width.
+
+- :guilabel:`Visible if`: set under which condition(s) the element should be displayed.
+
+- :guilabel:`Visible for`: set for which :doc:`users groups <../../general/users/access_rights>`
+  the element should be displayed.
+
+- :guilabel:`Remove from View`: remove the element from the report's view.
+
+- :guilabel:`Text decoration`: bold, italicize, and underline the font.
+
+- :guilabel:`Alignment`: align the element to the left, center, or right of the report.
+
+- :guilabel:`Font style`: use one of the default font styles.
+
+- :guilabel:`Colors`: change the font's color and the background color.
+
+.. note::
+   You may need to select a section or division above the element you want to edit to see some of
+   the options described above.
