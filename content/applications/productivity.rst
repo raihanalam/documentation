@@ -11,3 +11,4 @@ Productivity
     productivity/iot
     productivity/mail_plugins
     productivity/studio
+    productivity/knowledge
